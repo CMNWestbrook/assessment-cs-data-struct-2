@@ -1,0 +1,39 @@
+Discussion Questions
+
+Recursion
+    1. Recursion is a function or method that calls itself until a specific condition is reached.
+    2. A base case is necessary since a function calling itself would keep going forever if there wasn't a stopping condition.
+
+Graphs
+    1. A graph is a tree-like data structure.
+    2. Unlike a tree the nodes can contain loops and relationships between nodes can be directed or undirected.
+    3. An example of a directed graph would be a recipe where certain things need to happen in a certain order, but things on different branches can happen at the same time as others.
+
+Performance of Different Data Structures
+    Python List (Array)
+        Add-L:O(n)  Pop-L:O(n) Pop-R:O(1)
+    Linked List
+        Index:O(n) Search:O(n) Add-R:O(1) Add-L:O(1) Pop-L:O(1) Pop-R:O(n)
+    Doubly-Linked List
+        Index:O(n) Search:O(n)  Add-R:O(1)   Add-L:O(1)   Pop-L:O(1)   Pop-R:O(1)
+    Queue (as Array)
+        Add-R:O(1) Pop-L:O(n)
+    Queue (as LL or DLL)
+        Add-R:O(1) Pop-L:O(1)
+    Stack (as Array, LL, or DLL)
+        Add-R:O(1) Pop-R:O(1)
+    Deque (as DLL)
+        Add-R:O(1) Add-L:O(1) Pop-L:O(1) Pop-R:O(1)
+    Set (Hash Map)
+        Get:O(1) Add:O(1) Delete:O(1)  Iterate Memory
+    Binary Search Tree
+        Get:O(log n) Add: Delete:O(1)  Iterate Memory: little
+    Tree
+        Get:O(n) Add:O(1) Delete:O(1)  Iterate Memory
+
+Sorting
+    1. Bubble Sort is where you go through a list starting with the first two items, then the second and third items etc. and switch the places if the second item is smaller than the first. You go through the list multiple times until the entire thing is ordered from smallest to biggest.
+
+    2. Merge Sort starts with two already sorted lists and compares the first two items in each sorted list to see which is lower. The lower of the two is moved from that list into an empty list. Next the two initial lists compare the first two items to see which is lower, then moves the lower of the two as the second into the empty list, and so on.
+
+    3. Quick Sort starts with choosing a pivot, sort of a partition to separate a list into two smaller parts. This pivot can be random or in the middle (though if directly in the middle there would be a seperate function finding the middle). The pivot can technically be anywhere but random is more likely to be near the middle, which is better runtime. All numbers lower than the pivot number are moved to the beginning of the list and all numbers bigger are to the right of the pivot number.
